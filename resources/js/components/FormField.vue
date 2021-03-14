@@ -18,7 +18,7 @@
                     @click="$refs.add_file.click()"
                     class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded"
                     type="button"
-            >Upload File</button>
+            >{{ __('Upload File') }}</button>
             <p v-if="hasError" class="my-2 text-danger">
                 {{ firstError }}
             </p>
@@ -34,7 +34,7 @@
                                 <line x1="10" y1="11" x2="10" y2="17"></line>
                                 <line x1="14" y1="11" x2="14" y2="17"></line>
                             </svg>
-                            delete
+                            {{ __('Delete') }}
                         </a>
                     </p>
                 </div>
